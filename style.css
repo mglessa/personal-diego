@@ -1,94 +1,162 @@
-
-#header {
-  display: flex;
-  height: 100%;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-#first-carousel {
-  background-image: url(https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+body {
+    background-color: rgb(27, 27, 27);
+    font-family: "Roboto", serif;
+    color: #F3F4F6;
+}
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  h3 {
-    font-size: 12rem;
-    font-weight: 800;
-    color: black;
-    opacity: .5;
-  }
+a, li, ul {
+    all: unset;
+}
   
+h1, h2, h3, h4 {
+    all: unset;
+    font-family: "Oswald", serif;
+    color: #34D399;
 }
 
-#about {
-  display: flex;
-  margin-top: 8rem;
-  gap: 5rem;
+section {
+    max-width: 1024px;
+    margin-inline: auto;
+}
 
-  small {
-    font-weight: 500;
-
-  }
-
-  span {
-    align-items: end;
-    font-size: 1.5rem;
-    font-weight: 800;
-    opacity: .1;
-  }
-
-  .profile-description {
+footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 1rem 2rem;
-  }
 
-  h4 {
-    font-size: 3rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 100%;
-  }
+    max-width: 1024px;
+    margin-inline: auto;
 
-  p {
-    margin-top: 2rem;
-    font-size: 1rem;
-    font-weight: 500;
-  }
+    padding: 2rem;
 
-
-  #profile-image {
-    width: 32rem;
-    height: 32rem;
-    border-radius: 8px;
-    background-color: red;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin-top: 3rem;
-    
-    li {
-      font-size: .875rem;
-      padding-left: .5rem;
-      line-height: 100%;
+    h4 {
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 100%;
+        margin-bottom: 2rem;
     }
-  }
 
-  #plans {
-    margin-top: 4rem;
-    background-color: red;
-  }
+    a {
+        padding: .5rem 1rem;
+        text-align: center;
+        background-color: transparent;
+        border: 1px solid #34D399;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
 
-  .cards {
-    background-color: red;
-  }
+    a:hover {
+        background-color: #34D399;
+    }
+}
+
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .banner-head {
+        display: flex;
+        height: 5rem;
+        padding: .5rem 1rem;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+            width: 2rem;
+            height: 2rem;
+            transform: rotate(45deg);
+        }
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            
+            .small {
+                font-weight: .875rem;
+                color: #F3F4F6;
+            }
+        }
+    }
+
+    .text-decorator {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: end;
+        justify-content: end;
+        padding: .5rem;
+
+        span {
+            font-size: 7.5rem;
+            font-weight: 900;
+            line-height: 100%;
+            opacity: .2;
+        }
+    }
+
 
 }
 
+#profile-description {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 2rem;
+  
+    small {
+        color: #34D399;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    h4 {
+        font-size: 3rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 100%;
+        opacity: .5;
+        color: #F3F4F6;
+    }
+
+    img {
+        margin-block: 1rem;
+        border-radius: 5px;
+        box-shadow: 4px 4px 0px 4px rgb(52, 211, 153, .2);
+    }
+
+    p {
+        margin-top: 1rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        opacity: .8;
+        
+        li {
+          font-size: .875rem;
+          padding-left: .5rem;
+          line-height: 100%;
+          border-left: 4px solid #34D399;
+        }
+      }
+
+}
