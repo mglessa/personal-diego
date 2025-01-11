@@ -1,0 +1,94 @@
+
+#header {
+  display: flex;
+  height: 100%;
+}
+
+#first-carousel {
+  background-image: url(https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h3 {
+    font-size: 12rem;
+    font-weight: 800;
+    color: black;
+    opacity: .5;
+  }
+  
+}
+
+#about {
+  display: flex;
+  margin-top: 8rem;
+  gap: 5rem;
+
+  small {
+    font-weight: 500;
+
+  }
+
+  span {
+    align-items: end;
+    font-size: 1.5rem;
+    font-weight: 800;
+    opacity: .1;
+  }
+
+  .profile-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 2rem;
+  }
+
+  h4 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 100%;
+  }
+
+  p {
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+
+  #profile-image {
+    width: 32rem;
+    height: 32rem;
+    border-radius: 8px;
+    background-color: red;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    
+    li {
+      font-size: .875rem;
+      padding-left: .5rem;
+      line-height: 100%;
+    }
+  }
+
+  #plans {
+    margin-top: 4rem;
+    background-color: red;
+  }
+
+  .cards {
+    background-color: red;
+  }
+
+}
+

@@ -1,0 +1,61 @@
+@import url(banner.css);
+@import url(about.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(27, 27, 27);
+    font-family: "Roboto", serif;
+    color: #F3F4F6;
+}
+
+a, li, ul {
+    all: unset;
+}
+  
+h1, h2, h3, h4 {
+    all: unset;
+    font-family: "Oswald", serif;
+    color: #34D399;
+}
+
+section {
+    max-width: 1024px;
+    margin-inline: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1024px;
+    margin-inline: auto;
+
+    padding: 2rem;
+
+    h4 {
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 100%;
+        margin-bottom: 2rem;
+    }
+
+    a {
+        padding: .5rem 1rem;
+        text-align: center;
+        background-color: transparent;
+        border: 1px solid #34D399;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
+
+    a:hover {
+        background-color: #34D399;
+    }
+}
